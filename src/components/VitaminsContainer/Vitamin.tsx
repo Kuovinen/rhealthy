@@ -13,17 +13,17 @@ function Vitamin(props: vitaminProps) {
   return (
     <div className={"vitamin"}>
       <h3>{name}</h3>
-      <p>
+      <section>
         <h4>IMPORTANT FOR</h4>
         <ul>
           {helps.map((el) => (
-            <li>{el}</li>
+            <li key={crypto.randomUUID()}>{el}</li>
           ))}
         </ul>
         <h4>CONTAINED IN</h4>
 
         {containedin.map((el) => (
-          <button>
+          <button key={crypto.randomUUID()}>
             <span>{<img src={`/food/${el}.svg`} alt={el} title={el} />}</span>
           </button>
         ))}
@@ -31,10 +31,10 @@ function Vitamin(props: vitaminProps) {
         <h4>LACK EFFECTS</h4>
         <ul>
           {lackeffects.map((el) => (
-            <li>{el.name}</li>
+            <li key={crypto.randomUUID()}>{el.name}</li>
           ))}
         </ul>
-      </p>
+      </section>
     </div>
   );
 }

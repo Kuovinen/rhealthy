@@ -2,7 +2,7 @@ import React from "react";
 import Vitamin from "./VitaminsContainer/Vitamin";
 import vitaminData from "../data/vitaminData";
 import "./VitaminsContainer.css";
-function Vitamins() {
+function VitaminsContainer() {
   const vNames = [
     "A",
     "C",
@@ -27,15 +27,20 @@ function Vitamins() {
     <div className="vitamins">
       <div className="vitButtons">
         {vNames.map((el) => (
-          <button onClick={() => setCurrentVitamin(el)}>{el}</button>
+          <button
+            key={crypto.randomUUID()}
+            onClick={() => setCurrentVitamin(el)}
+          >
+            {el}
+          </button>
         ))}
       </div>
       <div>
         {dataToDisplay.map((item) => (
-          <Vitamin vit={item} />
+          <Vitamin key={crypto.randomUUID()} vit={item} />
         ))}
       </div>
     </div>
   );
 }
-export default Vitamins;
+export default VitaminsContainer;

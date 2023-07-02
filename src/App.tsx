@@ -1,6 +1,7 @@
 import React from "react";
 import VitaminsContainer from "./components/VitaminsContainer";
 import FoodItem from "./components/FoodItem";
+import Timer from "./components/Timer";
 import food from "./data/food";
 import "./App.css";
 
@@ -15,6 +16,8 @@ function App(props: AppProps) {
     <div className={props.title}>
       <VitaminsContainer />
       <FoodItem data={currentFoodItem} />
+
+      <Timer max={10} />
     </div>
   );
 }

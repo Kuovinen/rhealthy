@@ -13,21 +13,21 @@ function FoodItem(props: foodItemProps) {
       <h2>{name.toUpperCase()}</h2>
       <section>
         <p>Calories: {calories}</p>
-        <p>
+        <div>
           {vitamins.map((el) => (
-            <div>{el.name}</div>
+            <div key={crypto.randomUUID()}>{el.name}</div>
           ))}
-        </p>
-        <p>
+        </div>
+        <div>
           {minerals.map((el) => (
-            <div>{el}</div>
+            <div key={crypto.randomUUID()}>{el}</div>
           ))}
-        </p>
-        <p>
+        </div>
+        <div>
           {metals.map((el) => (
-            <div>{el}</div>
+            <div key={crypto.randomUUID()}>{el}</div>
           ))}
-        </p>
+        </div>
       </section>
     </div>
   );
