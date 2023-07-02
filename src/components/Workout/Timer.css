@@ -1,0 +1,13 @@
+.progressContainer {
+  height: 1rem;
+  width: 100%;
+  background-color: var(--c-background);
+  border: 0.1rem solid var(--c-white);
+  display: flex;
+  align-items: center;
+}
+.timerProgress {
+  margin: 0.1rem;
+  height: 90%;
+  background: var(--c-white);
+}
