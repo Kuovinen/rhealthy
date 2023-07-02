@@ -1,0 +1,9 @@
+.vitButtons > button {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 0.2rem;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  background: var(--c-sub2);
+}

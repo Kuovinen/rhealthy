@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+li {
+  font-weight: 100;
+}
+ul {
+  font-weight: 1000;
+}
+.vitamin {
+  background: var(--c-sub1);
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  border-radius: 0.25rem;
+  min-width: 40rem;
+}
+img {
+  height: 2rem;
+  opacity: 0.7;
+  filter: invert(100%);
+}
+button {
+  margin-right: 0.5rem;
+  border: none;
+  background: none;
+}
+button:active {
+  transform: scale(0.9);
+}
