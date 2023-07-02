@@ -7,3 +7,6 @@
   text-align: center;
   background: var(--c-sub2);
 }
+.vitamins {
+  flex: 2;
+}

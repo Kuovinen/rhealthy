@@ -1,5 +1,7 @@
 import React from "react";
 import VitaminsContainer from "./components/VitaminsContainer";
+import FoodItem from "./components/FoodItem";
+import food from "./data/food";
 import "./App.css";
 
 interface AppProps {
@@ -7,9 +9,12 @@ interface AppProps {
 }
 
 function App(props: AppProps) {
+  const [currentFoodItem, setCurrrentFoodItem] = React.useState(food[0]);
+
   return (
-    <div title={props.title}>
+    <div className={props.title}>
       <VitaminsContainer />
+      <FoodItem data={currentFoodItem} />
     </div>
   );
 }

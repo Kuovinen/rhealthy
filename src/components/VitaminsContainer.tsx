@@ -1,5 +1,5 @@
 import React from "react";
-import Vitamin from "./Vitamins/Vitamin";
+import Vitamin from "./VitaminsContainer/Vitamin";
 import vitaminData from "../data/vitaminData";
 import "./VitaminsContainer.css";
 function Vitamins() {

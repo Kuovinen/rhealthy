@@ -1,11 +1,15 @@
+export interface foodInterface {
+  name: string;
+  calories: number;
+  vitamins: {
+    name: string;
+    amount: number;
+    unit: string;
+  }[];
+  minerals: string[];
+  metals: string[];
+}
 const food = [
-  {
-    name: "banana",
-    calories: 89,
-    vitamins: { C: 14, D: 0, B6: 20 },
-    minerals: ["Potassium", "Manganese"],
-    metals: ["Magnesium"],
-  },
   {
     name: "carrots",
     calories: 41,
